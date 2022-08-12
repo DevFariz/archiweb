@@ -1,0 +1,51 @@
+.footer {
+  color: #fafafa;
+  padding: 50px 0 45px;
+  background: #2e2f32;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-block {
+    max-width: 290px;
+    a{
+      text-decoration: none;
+      transition: .25s;
+      &:hover{
+        color: rgb(184, 169, 169);
+      }
+    }
+  }
+  &__logo {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 46px;
+    margin-bottom: 7px;
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__text {
+    display: block;
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 8px;
+    &_first{
+      margin-bottom: 45px;
+    }
+  }
+  &-social{
+    display: flex;
+    &__item{
+      cursor: pointer;
+      margin-right: 35px;
+      transition: 0.25s;
+      &:hover{
+        opacity: 0.75;
+      }
+    }
+  }
+}

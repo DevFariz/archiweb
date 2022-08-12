@@ -5,6 +5,7 @@ import Intro from './components/intro/Intro';
 import Services from './components/services/Services';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
+import Footer from './components/footer/Footer';
 import Testimonial from './components/testimonial/Testimonial';
 
 import "./App.scss";
@@ -47,6 +48,7 @@ export default class App extends Component {
         <About />
         <Projects data={projects}/>
         <Testimonial/>
+        <Footer />
       </>
     )
   }
