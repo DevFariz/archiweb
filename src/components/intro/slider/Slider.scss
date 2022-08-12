@@ -1,16 +1,14 @@
 @import "~slick-carousel/slick/slick.css";
 
-.intro__slider{
+
+.intro__slider {
+  max-height: 739px;
   overflow: hidden;
   width: 80%;
   top: 0;
   right: 0;
   z-index: 2;
-}
-
-.intro__slider {
-
-  .slick-arrow{
+  .slick-arrow {
     position: absolute;
     bottom: 4px;
     background: rgba(244, 246, 245, 0.7);
@@ -19,17 +17,16 @@
     padding: 16px 29px;
     cursor: pointer;
     transition: 0.2s;
-    &:hover{
+    &:hover {
       background: rgba(244, 246, 245, 0.9);
     }
   }
 
-  .slick-prev{
+  .slick-prev {
     right: 81px;
   }
 
-  .slick-next{
+  .slick-next {
     right: 0;
   }
 }
-
