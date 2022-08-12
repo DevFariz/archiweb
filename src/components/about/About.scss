@@ -1,0 +1,28 @@
+.about {
+  padding: 75px 0 95px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      flex-basis: 50%;
+    }
+  }
+  &-content {
+    flex-basis: 30%;
+  }
+  &__text {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 35px;
+  }
+  &__link{
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    font-weight: 700;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

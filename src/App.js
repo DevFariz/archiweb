@@ -8,6 +8,7 @@ import "./App.scss";
 import Services01 from "./assets/svg/services-01.svg";
 import Services02 from "./assets/svg/services-02.svg";
 import Services03 from "./assets/svg/services-03.svg";
+import About from './components/about/About';
 
 export default class App extends Component {
 
@@ -27,6 +28,7 @@ export default class App extends Component {
         <Header />
         <Intro />
         <Services data={services}/>
+        <About />
       </>
     )
   }
