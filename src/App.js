@@ -5,6 +5,7 @@ import Intro from './components/intro/Intro';
 import Services from './components/services/Services';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
+import Testimonial from './components/testimonial/Testimonial';
 
 import "./App.scss";
 import Services01 from "./assets/svg/services-01.svg";
@@ -45,6 +46,7 @@ export default class App extends Component {
         <Services data={services}/>
         <About />
         <Projects data={projects}/>
+        <Testimonial/>
       </>
     )
   }

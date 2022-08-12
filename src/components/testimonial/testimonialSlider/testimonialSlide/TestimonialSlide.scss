@@ -1,0 +1,21 @@
+.testimonial-item {
+  display: flex;
+  align-items: center;
+  img {
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+  }
+  &__content {
+    max-width: 400px;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
