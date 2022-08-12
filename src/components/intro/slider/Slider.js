@@ -7,6 +7,37 @@ import LeftArrow from "../../../assets/svg/left-arrow.svg";
 import RightArrow from "../../../assets/svg/right-arrow.svg";
 
 
+const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+  <button
+    {...props}
+    className={
+      "slick-prev slick-arrow" +
+      (currentSlide === 0 ? " slick-disabled" : "")
+    }
+    aria-hidden="true"
+    aria-disabled={currentSlide === 0 ? true : false}
+    type="button"
+  >
+    <img src={LeftArrow} alt="arrow" />
+  </button>
+);
+
+
+const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+  <button
+    {...props}
+    className={
+      "slick-next slick-arrow" +
+      (currentSlide === slideCount - 1 ? " slick-disabled" : "")
+    }
+    aria-hidden="true"
+    aria-disabled={currentSlide === slideCount - 1 ? true : false}
+    type="button"
+  >
+    <img src={RightArrow} alt="arrow" />
+  </button>
+);
+
 class Slider extends Component {
   render() {
     const settings = {
@@ -14,12 +45,8 @@ class Slider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow: <button type="button" data-role="none" className="slick-arrow slick-prev" style={{display: "block"}}>
-        <img src={LeftArrow} alt="arrow" />
-      </button>,
-      nextArrow: <button type="button" data-role="none" className="slick-arrow slick-next" style={{display: "block"}}>
-        <img src={RightArrow} alt="arrow" />
-      </button>
+      prevArrow: <SlickArrowLeft />,
+      nextArrow: <SlickArrowRight />
     };
     return <div className="intro__slider">
       <IntroSlider {...settings}>
