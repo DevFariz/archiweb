@@ -5,10 +5,12 @@ import "./Intro.scss";
 
 const Intro = () => {
   return (
-    <section>
+    <section className="intro">
       <div className="container-bg">
-        <TextBlock />
-        <Slider />
+        <div className="intro-container">
+          <TextBlock />
+          <Slider />
+        </div>
       </div>
     </section>
   );

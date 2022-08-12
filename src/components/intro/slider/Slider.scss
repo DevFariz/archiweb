@@ -1,0 +1,36 @@
+@import "~slick-carousel/slick/slick.css";
+
+.intro__slider{
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.intro__slider {
+
+  .slick-arrow{
+    position: absolute;
+    bottom: 4px;
+    background: rgba(244, 246, 245, 0.7);
+    z-index: 4;
+    border: none;
+    padding: 16px 29px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+      background: rgba(244, 246, 245, 0.9);
+    }
+  }
+
+  .slick-prev{
+    right: 81px;
+  }
+
+  .slick-next{
+    right: 0;
+  }
+}
+
