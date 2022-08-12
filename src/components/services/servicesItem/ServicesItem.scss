@@ -1,0 +1,14 @@
+.services-item {
+  max-width: 158px;
+  text-align: center;
+  &__title {
+    text-transform: capitalize;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

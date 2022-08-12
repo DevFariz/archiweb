@@ -14,10 +14,10 @@ class Slider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow: <button type="button" data-role="none" class="slick-arrow slick-prev" style={{display: "block"}}>
+      prevArrow: <button type="button" data-role="none" className="slick-arrow slick-prev" style={{display: "block"}}>
         <img src={LeftArrow} alt="arrow" />
       </button>,
-      nextArrow: <button type="button" data-role="none" class="slick-arrow slick-next" style={{display: "block"}}>
+      nextArrow: <button type="button" data-role="none" className="slick-arrow slick-next" style={{display: "block"}}>
         <img src={RightArrow} alt="arrow" />
       </button>
     };
