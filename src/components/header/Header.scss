@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss";
+
 .header {
   padding: 50px 0;
   &-container {
@@ -5,22 +7,64 @@
     align-items: center;
     justify-content: space-between;
   }
+  @include lg {
+    padding: 25px 0;
+  }
+  @include sm {
+    padding: 10px 0;
+  }
 }
 
 .menu {
   display: flex;
   align-items: center;
   list-style: none;
+  transition: ease 0.4s;
   &__item {
     font-size: 20px;
     line-height: 24px;
     margin: 0 50px;
+    @include lg {
+      margin: 0 20px;
+    }
+    @include md{
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
     a {
       text-decoration: none;
       transition: 0.25s;
-      &:hover{
+      &:hover {
         text-shadow: 0 0 1px black;
       }
     }
   }
+  &-toggle__btn {
+    position: relative;
+    z-index: 999;
+    display: none;
+    font-size: 36px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @include md {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @include md {
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.active{
+  transform: translateY(0);
 }
