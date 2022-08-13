@@ -1,3 +1,5 @@
+// import {FaBars, FaTimes} from "react-icons/fa"
+
 import "./Header.scss";
 
 import logo from "../../assets/ArchiWeb-logo.jpg";
@@ -25,7 +27,13 @@ const Header = () => {
                 <a href="#a">Contact</a>
               </li>
             </ul>
+            {/* <button>
+              <FaTimes />
+            </button> */}
           </nav>
+          {/* <button>
+            <FaBars />
+          </button> */}
         </div>
       </div>
     </header>

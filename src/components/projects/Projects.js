@@ -7,7 +7,7 @@ import "./Projects.scss";
 
 export default class Projects extends Component {
   render() {
-    const { data } = this.props;
+    const { data, filter, onFilterProjects } = this.props;
 
     const projects = data.map((item) => {
       const { id, ...otherProps } = item;
@@ -19,7 +19,7 @@ export default class Projects extends Component {
         <div className="container">
           <div className="projects-top">
             <h2 className="section-title">Our Projects</h2>
-            <ProjectsFilter />
+            <ProjectsFilter filter={filter} onFilterProjects={onFilterProjects}/>
           </div>
           <div className="projects-container">{projects}</div>
         </div>
