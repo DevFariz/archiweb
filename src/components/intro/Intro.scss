@@ -1,5 +1,10 @@
+@import "../../breakpoints.scss";
+
 .intro-container{
   position: relative;
   display: flex;
   justify-content: flex-end;
+  @include lg{
+    display: block;
+  }
 }

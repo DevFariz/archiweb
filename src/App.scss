@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-$primary-color: red;
-
+@import "./breakpoints.scss";
 
 a{
   color: inherit;
@@ -27,6 +26,9 @@ body{
   max-width: 1450px;
   padding: 0 5px;
   margin: 0 auto;
+  @include sm{
+    padding: 0;
+  }
 }
 
 .container{

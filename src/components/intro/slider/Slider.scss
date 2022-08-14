@@ -1,13 +1,17 @@
 @import "~slick-carousel/slick/slick.css";
-
+@import "../../../breakpoints.scss";
 
 .intro__slider {
-  max-height: 739px;
   overflow: hidden;
   width: 80%;
   top: 0;
   right: 0;
   z-index: 2;
+  &-item{
+    img{
+      width: 100%;
+    }
+  }
   .slick-arrow {
     position: absolute;
     bottom: 4px;
@@ -20,13 +24,28 @@
     &:hover {
       background: rgba(244, 246, 245, 0.9);
     }
+    @include md{
+      padding: 5px 10px;
+    }
+    img{
+      @include md{
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 
   .slick-prev {
     right: 81px;
+    @include md{
+      right: 35px;
+    }
   }
 
   .slick-next {
     right: 0;
+  }
+  @include lg{
+    width: 100%;
   }
 }

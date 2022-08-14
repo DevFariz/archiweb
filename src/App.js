@@ -110,7 +110,7 @@ export default class App extends Component {
       <>
         <Header />
         <Intro />
-        <Services data={services} />
+        {/* <Services data={services} />
         <About />
         <Projects
           data={visibleData}
@@ -118,7 +118,7 @@ export default class App extends Component {
           onFilterProjects={this.onFilterProjects}
         />
         <Testimonial />
-        <Footer />
+        <Footer /> */}
       </>
     );
   }
