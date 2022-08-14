@@ -111,8 +111,8 @@ export default class App extends Component {
         <Header />
         <Intro />
         <Services data={services} />
-        {/* <About />
-        <Projects
+        <About />
+        {/* <Projects
           data={visibleData}
           filter={filter}
           onFilterProjects={this.onFilterProjects}

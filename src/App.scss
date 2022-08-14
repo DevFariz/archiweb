@@ -33,15 +33,21 @@ body{
 
 .container{
   max-width: 1250px;
-  padding: 5px;
+  padding: 0 5px;
   margin: 0 auto;
+  @include sm{
+    padding: 0;
+  }
 }
 
 .section-title{
   font-size: 48px;  
   line-height: 60px;
+  @include lg{
+    font-size: 36px;
+    line-height: 48px;
+  }
   @include md{
     font-size: 32px;
-    line-height: 48px;
   }
 }
