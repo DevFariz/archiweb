@@ -116,8 +116,8 @@ export default class App extends Component {
           filter={filter}
           onFilterProjects={this.onFilterProjects}
         />
-        {/*<Testimonial />
-        <Footer /> */}
+        <Testimonial />
+        {/* <Footer /> */}
       </>
     );
   }

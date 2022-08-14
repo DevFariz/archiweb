@@ -5,8 +5,29 @@ import "./testimonialSlider.scss";
 import TestimonialSlide from "./testimonialSlide/TestimonialSlide";
 
 class TestimonialSlider extends Component {
+
+  state = {
+    windowWidth: 0,
+  };
+
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+  handleResize = () => {
+    this.setState({
+      windowWidth: window.innerWidth,
+    });
+  };
+
   render() {
     const { data } = this.props;
+    const {windowWidth} = this.state;
 
     const slides = data.map((item) => {
       const { id, ...otherProps } = item;
@@ -23,7 +44,7 @@ class TestimonialSlider extends Component {
       appendDots: dots => (
         <div
           style={{
-            marginTop: "70px",
+            marginTop: windowWidth > 768 ? "70px" : "30px",
             display: "flex",
             justifyContent: "center"
           }}
@@ -43,7 +64,19 @@ class TestimonialSlider extends Component {
           }}
         >
         </button>
-      )
+      ),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: false
+          }
+        }
+      ]
     };
     return <Slider className="testimonial-slider" {...settings}>{slides}</Slider>;
   }
