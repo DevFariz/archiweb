@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss";
+
 .projects{
   margin-bottom: 90px;
   &-top{
@@ -5,11 +7,21 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 70px;
+    @include md{
+      text-align: center;
+      display: block;
+    }
+
   }
   &-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 60px;
+  }
+  .section-title{
+    @include md{
+      margin-bottom: 25px;
+    }
   }
 }

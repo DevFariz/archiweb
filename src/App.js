@@ -96,7 +96,6 @@ export default class App extends Component {
   };
 
   onFilterProjects = (filter) => {
-    console.log(filter);
     this.setState({
       filter,
     });
@@ -112,12 +111,12 @@ export default class App extends Component {
         <Intro />
         <Services data={services} />
         <About />
-        {/* <Projects
+        <Projects
           data={visibleData}
           filter={filter}
           onFilterProjects={this.onFilterProjects}
         />
-        <Testimonial />
+        {/*<Testimonial />
         <Footer /> */}
       </>
     );
