@@ -1,8 +1,14 @@
+@import "../../breakpoints.scss";
+
 .services{
-  padding: 15px 0 65px;
+  padding: 65px 0 65px;
   background: rgba(37, 77, 77, 0.2);
   &-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  @include sm{
+    padding: 25px 0;
   }
 }

@@ -110,8 +110,8 @@ export default class App extends Component {
       <>
         <Header />
         <Intro />
-        {/* <Services data={services} />
-        <About />
+        <Services data={services} />
+        {/* <About />
         <Projects
           data={visibleData}
           filter={filter}

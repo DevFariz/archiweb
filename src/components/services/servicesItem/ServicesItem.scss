@@ -1,3 +1,5 @@
+@import "../../../breakpoints.scss";
+
 .services-item {
   max-width: 158px;
   text-align: center;
@@ -10,5 +12,14 @@
   &__desc {
     font-size: 16px;
     line-height: 19px;
+  }
+  @include md{
+    max-width: 40%;
+    flex-basis: 50%;
+    margin-bottom: 40px;
+  }
+  @include sm {
+    max-width: 100%;
+    flex-basis: 100%;
   }
 }
