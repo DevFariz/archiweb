@@ -1,1 +1,2 @@
-Stack: React, SCSS, Slick-slider
+Stack: React, SCSS, Slick-slider <br>
+Deploy: https://devfariz.github.io/archiweb/
