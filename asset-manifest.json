@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/archiweb/static/css/main.3b1a79cc.css",
+    "main.js": "/archiweb/static/js/main.5ab06a21.js",
+    "static/media/slider-pic-01.jpg": "/archiweb/static/media/slider-pic-01.ecaa0c774d207707fbeb.jpg",
+    "static/media/about.jpg": "/archiweb/static/media/about.7f6b6d7dad6ef6bd8e58.jpg",
+    "static/media/projects-06.jpg": "/archiweb/static/media/projects-06.70c280e55ef6d9b09a19.jpg",
+    "static/media/projects-02.jpg": "/archiweb/static/media/projects-02.7bb236b6540a8fad033c.jpg",
+    "static/media/projects-03.jpg": "/archiweb/static/media/projects-03.00fb651d0e5439619b0e.jpg",
+    "static/media/projects-01.jpg": "/archiweb/static/media/projects-01.4609160fd70a8cf48651.jpg",
+    "static/media/projects-05.jpg": "/archiweb/static/media/projects-05.070978a6898bb659beb1.jpg",
+    "static/media/projects-04.jpg": "/archiweb/static/media/projects-04.9291e9b97418e74de825.jpg",
+    "static/media/footer-map.jpg": "/archiweb/static/media/footer-map.fd09a3f2247932a3704f.jpg",
+    "static/media/testimonial-01.jpg": "/archiweb/static/media/testimonial-01.0242413a529cc6df410f.jpg",
+    "static/media/testimonial-02.jpg": "/archiweb/static/media/testimonial-02.e7ef00b463b47ad7a622.jpg",
+    "static/media/instagram.svg": "/archiweb/static/media/instagram.1a69abe5cc31640188f84aedb65c63f3.svg",
+    "static/media/twitter.svg": "/archiweb/static/media/twitter.cc587d9c4aad44e27da41c372bff60ba.svg",
+    "static/media/services-01.svg": "/archiweb/static/media/services-01.f62aa764971e331f453f2966eaadde94.svg",
+    "static/media/services-03.svg": "/archiweb/static/media/services-03.b091f05d30cd80a23067dfb234f1ee4c.svg",
+    "index.html": "/archiweb/index.html",
+    "static/media/services-02.svg": "/archiweb/static/media/services-02.c3e5133e4ee57ab5d7cd51e17fbc76cb.svg",
+    "static/media/left-arrow.svg": "/archiweb/static/media/left-arrow.d2b1ad471ca4d0a2b3145eff3ca38341.svg",
+    "static/media/right-arrow.svg": "/archiweb/static/media/right-arrow.b07bfc4201f9358e9dd717d28a6a7f8c.svg",
+    "static/media/facebook.svg": "/archiweb/static/media/facebook.b6c4ef3dbfe1bd8fe2f636d89217540e.svg",
+    "main.3b1a79cc.css.map": "/archiweb/static/css/main.3b1a79cc.css.map",
+    "main.5ab06a21.js.map": "/archiweb/static/js/main.5ab06a21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b1a79cc.css",
+    "static/js/main.5ab06a21.js"
+  ]
+}
